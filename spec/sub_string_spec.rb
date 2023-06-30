@@ -23,4 +23,13 @@ describe SubString do
             end
         end
     end
+
+    describe "sub string" do
+        context "One more example" do
+            it "returns correct values" do
+                dictionary = ["Hi", "Thing", "Woah", "Hello", "Morning"]
+                expect(@SubString.sub_string("hi what a morning thing", dictionary)).to eq({"hi" => 2, "thing" => 1, "morning" => 1})
+            end
+        end
+    end
 end
